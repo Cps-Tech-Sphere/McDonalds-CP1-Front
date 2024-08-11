@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza horizontalmente o container */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#header {
+    grid-column: 1 / -1;
+    background-color: #f8f8f8;
+    text-align: center;
+    height: 120px; /* Altura do header */
+}
+
+.slideShow {
+    grid-column: 1 / -1;
+    background-color: #e0e0e0;
+    text-align: center;
+    height: 700px; /* Altura do slideShow */
+}
+
+.combos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas por linha */
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-items: center; /* Centraliza itens dentro de cada célula do grid */
+}
+
+.combos > div {
+    background-color: #dcdcdc;
+    text-align: center;
+    height: 470px;
+    width: 540px;
+    margin-top: 35px;
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+    grid-row: 4;
+    justify-items: center; /* Centraliza itens dentro de cada célula do grid */
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.informacoes > div {
+    background-color: #cfcfcf;
+    text-align: center;
+    height: 470px;
+    width: 350px;
+}
+
+#rodape {
+    grid-column: 1 / -1;
+    background-color: #f8f8f8;
+    text-align: center;
+    height: 700px; /* Altura do rodapé */
+    margin-top: 90px;
+}
+
+/* Ajustes para telas menores que 2500px */
+@media screen and (max-width: 2500px){
+    #container {
+        width: 100%; /* Reduz a largura máxima do container */
+        padding: 0 10px; /* Ajusta o padding */
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .combos > div {
+        width: 100%; /* Ajusta a largura dos itens no grid de combos */
+        max-width: 500px; /* Define uma largura máxima */
+        height: 350px; /* Ajusta a altura automaticamente */
+    }
+
+    .informacoes > div {
+        width: 100%; /* Ajusta a largura dos itens no grid de informações */
+        max-width: 330px; /* Define uma largura máxima */
+        height: 350px; /* Ajusta a altura automaticamente */
+    }
+
+    .slideShow {
+        height: 600px; /* Reduz a altura do slideShow */
+    }
+
+    #rodape {
+        height: 600px; /* Reduz a altura do rodapé */
+        width: 100%;
+    }
+}
