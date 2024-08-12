@@ -1,6 +1,7 @@
 /* style.css */
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -38,17 +39,46 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Duas colunas por linha */
     grid-column: 1 / -1;
-    grid-row: 3;
     justify-items: center; /* Centraliza itens dentro de cada célula do grid */
 }
 
-.combos > div {
-    background-color: #dcdcdc;
-    text-align: center;
-    height: 470px;
-    width: 540px;
-    margin-top: 35px;
+.produtos {
+    background-color: #dcdcdc; /* Cor de fundo cinza */
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 6px;
+    padding: 20px; /* Espaçamento interno */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    gap: 15px; /* Espaço entre os elementos */
+    overflow: hidden; /* Garante que tudo fique dentro do contêiner */
 }
+
+.produtos img {
+    max-width: 100%;
+    border-radius: 6px; /* Adiciona borda arredondada à imagem para se alinhar ao contêiner */
+}
+
+.produtos h2, .produtos p, .produtos button {
+    margin: 0; /* Remove margens externas */
+    width: 100%; /* Garante que ocupem a largura total disponível */
+}
+
+.produtos button {
+    background-color: #ffcc00; /* Cor de fundo do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produtos button:hover {
+    background-color: #e6b800; /* Cor de fundo do botão ao passar o mouse */
+}
+
 
 .informacoes {
     display: grid;
