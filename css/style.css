@@ -118,6 +118,8 @@ nav{
     background-color: #e0e0e0;
     text-align: center;
     height: 700px; /* Altura do slideShow */
+    background-image: url(../img/imagem.inicial.png);
+    background-size: cover;
 }
 
 .combos {
