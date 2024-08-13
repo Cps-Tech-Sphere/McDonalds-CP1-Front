@@ -1,4 +1,10 @@
 /* style.css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,11 +30,12 @@ body {
 #header {
     gap: 10px;
     display: flex;
-    height: 121px;  /* Altura do header */
+    height: 130px;  /* Altura do header */
     padding: 0 130px;
     align-items: center;
     z-index: 999;
     top: -10px;
+    position: sticky;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.127);   
     grid-column: 1 / -1;
     background-color: white;
@@ -40,6 +47,7 @@ body {
 nav{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 #imagem-logo-inicial{
@@ -57,14 +65,12 @@ nav{
     justify-content: space-between;
     gap: 280px;
     align-items: center;
-    margin-top: 17px;
 }
 
 .container2-header{
     display: flex;
     color: #292929;
     gap: 5px;
-    margin-top: -15px;
 }
 
 .container2-header p{
@@ -108,7 +114,7 @@ nav{
     align-items: center;
     font-size: 16px;
     margin-left: 10px;
-    padding: 3px 25px;
+    padding: 8px 28px;
     background-color: #ffbc0d;
     border-radius: 6px;
 }
