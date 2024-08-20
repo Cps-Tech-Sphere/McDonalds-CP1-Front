@@ -20,8 +20,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto;
     gap: 10px;
-    width: 100%;
-    max-width: 1200px;
+    width: 85%;
     margin: 0 auto; /* Centraliza horizontalmente o container */
     padding: 0 20px;
     box-sizing: border-box;
@@ -130,46 +129,64 @@ nav{
 
 .combos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas por linha */
+    grid-template-columns: repeat(2, 2fr); /* Duas colunas por linha */
     grid-column: 1 / -1;
     justify-items: center; /* Centraliza itens dentro de cada célula do grid */
 }
 
 .produtos {
-    background-color: #dcdcdc; /* Cor de fundo cinza */
+    background-color: white;
+    color: #292929;
+    width: 746px;
+    height: 532px; /* Definindo a largura dos cards */
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     border-radius: 6px;
-    padding: 20px; /* Espaçamento interno */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    gap: 15px; /* Espaço entre os elementos */
-    overflow: hidden; /* Garante que tudo fique dentro do contêiner */
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
 }
 
 .produtos img {
-    max-width: 100%;
-    border-radius: 6px; /* Adiciona borda arredondada à imagem para se alinhar ao contêiner */
-}
-
-.produtos h2, .produtos p, .produtos button {
-    margin: 0; /* Remove margens externas */
-    width: 100%; /* Garante que ocupem a largura total disponível */
+    width: 100%;
+    height: 322px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
 }
 
 .produtos button {
-    background-color: #ffcc00; /* Cor de fundo do botão */
+    min-width: 114px;
+    background-color: #ffbc0d; /* Cor de fundo do botão */
     border: none;
-    padding: 10px 20px;
+    padding: 14px 30px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+.produtos div button {
+    align-self: center; /* ou outro valor como center */
+    width: auto; /* ou outro valor fixo como 100px */
+}
+
 .produtos button:hover {
-    background-color: #e6b800; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #c08b00; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.produtos div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.conteudo-card {
+    border: #292929;
+    width: 85%;
 }
 
 
@@ -183,11 +200,63 @@ nav{
     margin-top: 35px;
 }
 
-.informacoes > div {
-    background-color: #cfcfcf;
+.info-cards {
+    background-color: white;
     text-align: center;
-    height: 470px;
-    width: 350px;
+    height: 478px;
+    width: 485px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui espaço entre o conteúdo */
+    align-items: center;
+    position: relative;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
+}
+
+.info-cards img {
+    width: 100%;
+    height: 212px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.conteudo-info-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1; /* Faz o conteúdo do texto crescer para ocupar espaço */
+}
+
+.info-textos {
+    margin-top: 20px;
+    flex-grow: 1; /* Para garantir que o texto centralize verticalmente */
+    text-align: center;
+}
+
+.info-textos h2 {
+    margin-bottom: 15px;
+}
+
+.info-cards button {
+    min-width: 114px;
+    background-color: #ffbc0d; /* Cor de fundo do botão */
+    border: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 40px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-cards button:hover {
+    background-color: #c08b00; /* Cor de fundo do botão ao passar o mouse */
 }
 
 #rodape {
@@ -197,38 +266,3 @@ nav{
     height: 700px; /* Altura do rodapé */
     margin-top: 90px;
 }
-
-/* Ajustes para telas menores que 2500px */
-@media screen and (max-width: 2500px){
-    #container {
-        width: 100%; /* Reduz a largura máxima do container */
-        padding: 0 10px; /* Ajusta o padding */
-    }
-
-    header{
-        width: 100%;
-    }
-
-    .combos > div {
-        width: 100%; /* Ajusta a largura dos itens no grid de combos */
-        max-width: 500px; /* Define uma largura máxima */
-        height: 350px; /* Ajusta a altura automaticamente */
-    }
-
-    .informacoes > div {
-        width: 100%; /* Ajusta a largura dos itens no grid de informações */
-        max-width: 330px; /* Define uma largura máxima */
-        height: 350px; /* Ajusta a altura automaticamente */
-    }
-
-    .slideShow {
-        height: 600px; /* Reduz a altura do slideShow */
-    }
-
-    #rodape {
-        height: 600px; /* Reduz a altura do rodapé */
-        width: 100%;
-    }
-}
-
-/* COMENTÁRIO TESTE */
