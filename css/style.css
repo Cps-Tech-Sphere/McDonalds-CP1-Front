@@ -262,7 +262,116 @@ nav{
 #rodape {
     grid-column: 1 / -1;
     background-color: #f8f8f8;
-    text-align: center;
+    
     height: 700px; /* Altura do rodapé */
     margin-top: 90px;
+}
+
+.rodape_container{
+    display: flex;
+    background-color: #FFBF00;
+    max-height: 300px;
+
+    
+}
+
+.textoep{
+    flex-direction: column;
+}
+
+
+.titulo_final{
+    display: flex;
+    font-size: 40px;
+    margin-top: 20px;
+
+}
+
+.texto_final{
+    font-size: 18px;
+    color: black;
+    
+}
+
+.botao_final{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 620px;
+    margin-top: 50px;
+    border: none;
+    font-weight: bold;
+    
+}
+
+.logo_final{
+    margin-left:200px;
+    padding: 20px;
+    max-width: 125px;
+}
+
+.sobre{
+    display: flex;
+    
+    
+}
+
+ul{
+    margin: 40px 140px;
+    font-weight: bold;
+    
+}
+
+li{
+    list-style: none;
+    color: #696969;
+    padding:  5px;
+}
+
+.redesociais ul{
+    display: flex;
+}
+
+.redesociais ul.apps li img {
+    width: 150px;
+    
+    
+  }
+  
+
+.redesociais li.appst img {
+    
+    width: 130px; 
+    margin-left: 1200px;
+    }
+
+    .redesociais li.appsg img{
+        width: 145px;
+    }
+
+hr{
+    margin: 0 180px;
+}
+
+.linhafinal {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 20px 80px;
+    gap: 20px;
+}
+
+.linhafinal div {
+    display: flex;
+    gap: 20px; /
+}
+
+.linhafinal .logo_container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.linhafinal .logo_container img {
+    width: 40px; /
 }
