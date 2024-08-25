@@ -22,7 +22,6 @@ body {
     gap: 10px;
     width: 100%;
     margin: 0 auto; /* Centraliza horizontalmente o container */
-    paddi: 0 20px;
     box-sizing: border-box;
 }
 
@@ -33,7 +32,7 @@ body {
     padding: 0 130px;
     align-items: center;
     z-index: 999;
-    top: -10px;
+    top: 0px;
     position: sticky;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.127);   
     grid-column: 1 / -1;
@@ -91,6 +90,9 @@ nav{
 .box2-header{
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 200px;
+    top: 3px;
 }
 
 .box2-header p{
@@ -157,6 +159,7 @@ nav{
 }
 
 .produtos button {
+    color: rgba(0,0,0,.7);
     min-width: 114px;
     background-color: #ffbc0d; /* Cor de fundo do botão */
     border: none;
@@ -282,7 +285,8 @@ nav{
 
 .titulo_final{
     display: flex;
-    font-size: 40px;
+    color: #292929;
+    font-size: 36px;
     margin-top: 20px;
 
 }
@@ -294,14 +298,16 @@ nav{
 }
 
 .botao_final{
-    width: 150px;
-    height: 60px;
-    border-radius: 10px;
+    color: #292929;
+    width: 114px;
+    height: 48px;
+    text-align: center;
+    border-radius: 4px;
     margin-left: 620px;
     margin-top: 50px;
     border: none;
     font-weight: bold;
-    
+    cursor: pointer;
 }
 
 .logo_final{
@@ -350,7 +356,12 @@ li{
     }
 
 hr{
+    color: #292929;
     margin: 0 180px;
+    height: 1px;
+    background: #292929;
+    font-size: 0;
+    border: 0;
 }
 
 .linhafinal {
