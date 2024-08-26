@@ -43,21 +43,21 @@ Este projeto é uma tentativa de replicar o site do McDonald's utilizando tecnol
 
 <a href="https://github.com/seu-K1rit03" target="_blank" style="text-align: center; margin-right: 10px;">
 <img loading="lazy" src="https://avatars.githubusercontent.com/K1rit03" width=120>
-<p style="font-size:min(2vh, 36px); margin-top: 10px;">Thiago - RM XXXXXXX</p>
+<p style="font-size:min(2vh, 36px); margin-top: 10px;">Thiago de Barros Oliveira - RM 555485</p>
 </a>
 
 <a href="https://github.com/iannyrfs" target="_blank" style="text-align: center; margin-right: 10px;">
 <img loading="lazy" src="https://avatars.githubusercontent.com/iannyrfs" width=120>
-<p style="font-size:min(2vh, 36px); margin-top: 10px;">Ianny - RM XXXXXXX</p>
+<p style="font-size:min(2vh, 36px); margin-top: 10px;">Ianny Raquel Ferreira de Souza - RM 559096</p>
 </a>
 
 <a href="https://github.com/JeannMatheuss" target="_blank" style="text-align: center; margin-right: 10px;">
 <img loading="lazy" src="https://avatars.githubusercontent.com/JeannMatheuss" width=120>
-<p style="font-size:min(2vh, 36px); margin-top: 10px;">Jean - RM XXXXXXX</p>
+<p style="font-size:min(2vh, 36px); margin-top: 10px;">Jean Matheus Mohamed de Oliveira - RM 555519</p>
 </a>
 
 <a href="https://github.com/Malice112" target="_blank" style="text-align: center; margin-right: 10px;">
 <img loading="lazy" src="https://avatars.githubusercontent.com/Malice112" width=120>
-<p style="font-size:min(2vh, 36px); margin-top: 10px;">Maria Alice - RM XXXXXXX</p>
+<p style="font-size:min(2vh, 36px); margin-top: 10px;">Maria Alice Freitas Araújo - RM 557516</p>
 </a>
 </div>
